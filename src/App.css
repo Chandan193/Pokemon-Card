@@ -1,0 +1,81 @@
+.App {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  flex-direction: column;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  background: radial-gradient(yellow, rgb(131, 236, 131));
+}
+
+.TitleSection {
+  background-color: rgb(113, 113, 183);
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.TitleSection input {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #7e1adb;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.TitleSection button {
+  width: 180px;
+  height: 40px;
+  margin: 20px;
+  border-radius: 12px;
+  border: 1px solid #000000;
+  font-size: 16px;
+  padding-left: 10px;
+  color: white;
+  background-color: #3f339b;
+}
+
+.TitleSection button:hover {
+  cursor: pointer;
+}
+
+.DisplaySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+}
+
+.PokemonCard {
+  background: linear-gradient(#eb4034, #2b1ee6, #2b1ee6);
+  color: white;
+  border-radius: 10px;
+  margin: 20px;
+  transform-style: preserve-3d;
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(90deg);
+  }
+}
+
+.PokemonCard h4,
+h3 {
+  margin: 5px;
+}
+
+.PokemonCard img {
+  width: 200px;
+}
