@@ -1,4 +1,5 @@
 import "./App.css";
+import "./Pokemon.css"
 import { useState } from "react";
 import Axios from "axios";
 
@@ -19,9 +20,7 @@ function App() {
     Axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`).then(
       (response) => {
         const pokemonSpecies = response.data.species.name;
-        const pokemonImageUrl = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${padNumber(
-          response.data.id
-        )}.png`;
+        const pokemonImageUrl = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${padNumber(response.data.id)}.png`;
         setPokemon({
           name: pokemonName,
           species: pokemonSpecies,
